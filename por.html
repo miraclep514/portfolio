@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />  
+</head>
+<body>
+
+    <header>
+    <!-- Logo -->
+    <div class="logo">PMiracle</div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="abt.html">About</a></li>
+        <li><a href="ser.html">Services</a></li>
+        <li><a href="por.html">Portfolio</a></li>
+        <li><a href="con.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+          <a href="cv.pdf" target="_blank">
+           <a href="Promise CV_20250731_161231_0000.pdf" target="_blank" class="cv-btn">
+    CheckOut CV
+</a>
+
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+
+
+<section class="portfolio-section animate-on-scroll fade-in-down">
+  <h2 class="animate-on-scroll fade-in-down">My Portfolio</h2>
+  <p class="portfolio-intro animate-on-scroll fade-in-up" style="transition-delay: 0.1s;">
+    Here’s my launched project as a front-end web developer.
+  </p>
+
+  <div class="portfolio-container">
+    <!-- EUX Travels Project -->
+    <div class="portfolio-card animate-on-scroll fade-in-up" style="transition-delay: 0.2s;">
+      <img src="Screenshot 2025-08-02 111124.png" alt="EUX Travels Website">
+      <div class="portfolio-overlay">
+        <h3>EUX Travels</h3>
+        <p>Developed and launched a responsive travel booking website with an intuitive user experience.</p>
+        <a href="https://www.euxtravels.com" target="_blank">
+          <i class="fas fa-external-link-alt"></i> Visit Site
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show"); // animate in on scroll down
+      } else {
+        entry.target.classList.remove("show"); // animate out on scroll up
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+
+
+<script>
+    function toggleMenu() {
+      document.querySelector("nav").classList.toggle("active");
+    }
+  </script>
+
+  <script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav");
+    const hamburger = document.querySelector(".hamburger");
+
+    nav.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate-on-scroll, .pop-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Element enters viewport → show animation
+        entry.target.classList.add("show");
+      } else {
+        // Element leaves viewport → reverse animation
+        entry.target.classList.remove("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show"); // Animate in
+      } else {
+        entry.target.classList.remove("show"); // Reverse animation
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show"); // Animate in
+      } else {
+        entry.target.classList.remove("show"); // Reverse animation on scroll up
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show"); // animate in
+      } else {
+        entry.target.classList.remove("show"); // animate out on scroll up
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <p>&copy; 2025 Promise Miracle. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+       <a href="http://linkedin.com/in/chukwuwinke-promise-715856377" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a> 
+    <a href="mailto:promisechukwuwinke9@gmail.com">
+  <i class="fas fa-envelope"></i>
+</a>
+<a href="https://wa.me/2348168405796" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+    </div>
+  </div>
+</footer>
+    
+</body>
+</html>
